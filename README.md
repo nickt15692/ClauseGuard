@@ -281,6 +281,3 @@ npm install -g pptxgenjs
 
 MIT
 
----
-
-*ClauseGuard · BUAN 6v99.s01 · UT Dallas · April 2026*
