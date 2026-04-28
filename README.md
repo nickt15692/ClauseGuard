@@ -1,5 +1,5 @@
 # ClauseGuard — Run Guide
-## Contract Conflict Detector · Project 1/3
+## Contract Conflict Detector
 
 ---
 
