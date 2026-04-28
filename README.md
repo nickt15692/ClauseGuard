@@ -1,5 +1,33 @@
-# ClauseGuard — Run Guide
-## Contract Conflict Detector
+# ClauseGuard
+
+**AI-powered contract conflict detector.** Upload two contract PDFs — your company's standard terms and a vendor's proposed terms — and a Claude-powered agent finds every conflicting clause, ranks them by legal risk, and produces a structured redline brief with suggested resolution language.
+
+Built with the Anthropic SDK from scratch (no no-code platforms). Streams live tool call progress to the browser as the agent works.
+
+---
+
+## Features
+
+- Detects and ranks conflicts across two contracts by severity (Critical / High / Medium / Low)
+- Generates resolution language for each conflict from your company's perspective
+- Live progress bar via Server-Sent Events — watch tool calls fire in real time
+- Export results as JSON or formatted PDF
+- Scanned PDF detection with actionable error messages
+- Optional Bearer token auth for protecting endpoints
+- One-command startup on Mac, Linux, and Windows
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| AI agent | Anthropic SDK (raw agentic loop, async streaming) |
+| Backend | FastAPI + uvicorn |
+| PDF parsing | PyMuPDF |
+| PDF export | ReportLab |
+| Frontend | React + Vite |
+| Model | claude-sonnet-4-6 (configurable) |
 
 ---
 
@@ -249,4 +277,10 @@ npm install -g pptxgenjs
 
 ---
 
-*ClauseGuard · Project 1/3 · BUAN 6v99.s01 · UT Dallas · April 2026*
+## License
+
+MIT
+
+---
+
+*ClauseGuard · BUAN 6v99.s01 · UT Dallas · April 2026*
